@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="743e58e8977c02108b4e7b2e6253afa8" label="u_dailyexp" max_length="40" name="x_snc_dailyexpense_u_dailyexp" type="collection">
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Amount" max_length="20" name="amount" type="price"/>
+        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="DayName" max_length="40" name="dayname" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ItemName" max_length="40" name="itemname" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
